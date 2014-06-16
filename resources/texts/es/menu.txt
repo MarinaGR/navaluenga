@@ -1,0 +1,3 @@
+<a href="./index.html">Inicio</a>
+<a href="./index.html#casas" onclick="ov_go_to_section('casas')">Casas Rurales</a>
+<a href="./contacto.html">Contacto</a>

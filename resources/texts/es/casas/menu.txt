@@ -1,0 +1,7 @@
+<a href="./index.html">Inicio</a>
+<a href="#informacion" onclick="ov_go_to_section('informacion')">Información</a>
+<a href="#virtual" onclick="ov_go_to_section('virtual')">Conoce la casa</a>
+<a href="#reservas" onclick="ov_go_to_section('reservas')">Reservas</a>
+<a href="#tarifas" onclick="ov_go_to_section('tarifas')">Tarifas</a>
+<a href="./index.html#casas" onclick="ov_go_to_section('casas')">Otras casas Rurales</a>
+<a href="./contacto.html">Contacto</a>

@@ -1,0 +1,6 @@
+<a href="./index.html">Home</a>
+<a href="#turismo" onclick="ov_go_to_section('turismo')">Turism</a>
+<a href="#paisaje" onclick="ov_go_to_section('paisaje')">Landscapes</a>
+<a href="#gastronomia" onclick="ov_go_to_section('gastronomia')">Gastronomy</a>
+<a href="#casas" onclick="ov_go_to_section('casas')">Country houses</a>
+<a href="./contacto.html">Contact</a>

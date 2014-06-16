@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<title>CASA RURAL CUCU - NAVALUENGA.NET - Casas Rurales en Navaluenga</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Grupo Ovnyline Comunicación">
+	<meta name="owner" content="Grupo Ovnyline Comunicación">
+	<meta name="rating" content="General">
+	<meta name="robot" content="index, follow">
+	<meta name="Description" content="Casa Cucu, Casas Rurales en Navaluenga, Ávila, España">
+	<meta name="Keywords" content="casa cucu, turismo, rural, casa rural, alojamiento navaluenga, naturaleza, actividades, hotel, gredos, avila, ávila, grupos, calidad, piscina, casas, rurales">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<meta name="cache-control" content="no-cache">
+	<meta name="expires" content="0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Andika&ssubset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oregano:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href="../css/estilo_01.css" rel="stylesheet" type="text/css">	
+	
+	<script src="../js/jquery.js"></script>
+	<script src="../js/general.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$('#ov_images_inicio').css("background-image","url(../resources/images/casas/cucu/0.jpg)");
+			$('#ov_footer_inicio').css("background-image","url(../resources/images/casas/cucu/0.jpg)");
+		});
+	</script>
+	
+</head>
+<body class="ov_body_01" onload="onBodyLoad('cucu','es')">
+	
+	<div id="ov_images_inicio" class="ov_contenedor_01">
+		
+		<div class="ov_section_01">			
+			<div class="ov_menu_01">
+				<div class="ov_header_01">
+					<a href="./index.html"><img src="../resources/images/logo.png" alt="logo" class="ov_logo_01"/></a>
+				</div>
+				
+				<div class="ov_cierre" onclick='$(".ov_menu_01").hide()'>X</div>
+				<img src="../resources/images/menu.png" alt="menu" title="Menu" onclick="$('#mi_menu').toggle()" class="ov_image_02" />
+				<span id="mi_menu" style="display:none"> </span>
+				<!--<a href="./index.html">Inicio</a>
+				<a href="#informacion" onclick="ov_go_to_section('informacion')">Información</a>
+				<a href="#virtual" onclick="ov_go_to_section('virtual')">Conoce la casa</a>
+				<a href="#reservas" onclick="ov_go_to_section('reservas')">Reservas</a>
+				<a href="#tarifas" onclick="ov_go_to_section('tarifas')">Tarifas</a>
+				<a href="./index.html#casas" onclick="ov_go_to_section('casas')">Otras casas Rurales</a>
+				<a href="./contacto.html">Contacto</a>-->
+				<img src="../resources/images/es.jpg" alt="Español" title="Español" onclick="window.location.href='../es/casacucu.html'" class="ov_image_02" />
+				<img src="../resources/images/en.jpg" alt="English" title="English" onclick="window.location.href='../en/casacucu.html'" class="ov_image_02" />
+				<img src="../resources/images/fr.jpg" alt="Français" title="Français" onclick="window.location.href='../fr/casacucu.html'" class="ov_image_02" />
+			</div>
+		</div>
+		
+		<div class="ov_section_02">
+			<div class="ov_article_01" id="informacion">	
+				
+				<h2 id="htitulo_01"> </h2>
+				<div class="ov_separador_01"> </div>
+				<div id="htexto_01"> </div>
+				
+			</div>
+		</div>
+		
+		<div class="ov_section_03">
+			<div class="ov_article_01" id="virtual">	
+				<h2 id="htitulo_02"> </h2>
+				<div class="ov_separador_01"> </div>
+					
+				<iframe src="http://www.navaluenga.net/visitasvirtuales/Casa Cucu/virtualtour.html" height="400" width="100%" frameborder="no" allowfullscreen> </iframe>
+
+				<div class="ov_separador_01"> </div>
+					
+				<iframe src="http://player.vimeo.com/video/69386701?title=0&amp;byline=0&amp;portrait=0&amp;color=dedede" width="100%" height="400" frameborder="0" allowfullscreen> </iframe>
+			</div>
+		</div>
+		
+		<div class="ov_section_02">
+			<div class="ov_article_01" id="reservas">	
+				<h2 id="htitulo_03"> </h2>
+				<div class="ov_separador_01"> </div>					
+				<div id="htexto_02"> </div>
+				
+				<!-- Añadir método de pago paypal para dejar la reserva pagada -->
+				
+				<form id="casadecucu_booking"> 
+					<input type="hidden" name="booking_house" id="booking_house_id" value="CasaCucu" class="ov_input_01" />
+					
+					<div class="ov_float_01">
+						<span class="ov_label_01" id="hform_name"> </span>						
+						<input type="text" name="booking_name" id="booking_name_id" class="ov_input_01" />
+						
+						<span class="ov_label_01" id="hform_d_start"> </span>
+						<input type="date" name="booking_date_start" id="booking_date_start_id" class="ov_input_01" />
+						
+						<span class="ov_label_01" id="hform_d_end"> </span>
+						<input type="date" name="booking_date_end" id="booking_date_end_id" class="ov_input_01" />
+						
+						<span class="ov_label_01" id="hform_tlf"> </span>
+						<input type="tel" name="booking_tlf" id="booking_tlf_id" class="ov_input_01" />					
+					</div>
+					
+					<div class="ov_float_01">
+						<span class="ov_label_01" id="hform_email"> </span>
+						<input type="email" name="booking_email" id="booking_email_id" class="ov_input_01" />
+						
+						<span class="ov_label_01" id="hform_adults"> </span>
+						<input type="number" name="booking_adults" id="booking_adults_id" class="ov_input_01" />
+						
+						<span class="ov_label_01" id="hform_kids"> </span>
+						<input type="number" name="booking_kids" id="booking_kids_id" class="ov_input_01" />
+						
+						<span class="ov_label_01" id="hform_comments"> </span>
+						<textarea name="booking_comments" id="booking_comments_id" class="ov_textarea_01" > </textarea>
+					</div>
+					
+					<input type="button" class="ov_button_01" value="Enviar" onclick="ov_make_booking('casadecucu_booking')" style="margin-left: 90px;">
+					<span id="ov_loader_gif"> </span>
+
+					<div class="ov_clear_02"> </div>
+					
+				</form>
+
+			</div>
+		</div>
+		
+		<div class="ov_section_03">
+			<div class="ov_article_01" id="tarifas">	
+				<h2 id="htitulo_04"> </h2>
+				<div class="ov_separador_01"> </div>
+					
+				<div id="htexto_03"> </div>
+
+			</div>
+		</div>		
+		
+		<!-- PIE -->
+		<div class="ov_footer_01" id="ov_footer_inicio">
+			<div class="ov_section_04">
+				
+				<div class="ov_clear_02"> </div>
+			
+				<div class="ov_article_01">
+					
+					<div class="ov_article_03">
+						<h4 id="ftitulo_01"> </h4>
+						<div id="fenlaces_01"> </div>
+					</div>
+					
+					<div class="ov_article_03">
+						<h4 id="ftitulo_02"> </h4>
+						<div id="fenlaces_02"> </div>
+					</div>
+					
+					<div class="ov_article_04">
+						<h4 id="ftitulo_03"> </h4>
+						<div id="fenlaces_03"> </div>
+					</div>
+					
+					<div class="ov_article_03">
+						<h4 id="ftitulo_04"> </h4>
+						<div id="fenlaces_04"> </div>
+					</div>
+					
+					<div class="ov_article_05">
+						<h4 id="ftitulo_05"> </h4>
+						<div id="fenlaces_05"> </div>
+					</div>		
+					
+					<div class="ov_clear_02"> </div>
+					<p id="ov_design"> </p>	
+					<div class="ov_clear_02"> </div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- FIN PIE -->
+
+	</div>
+	
+</body>
+</html>
