@@ -17,9 +17,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oregano:400,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
-	<link href="../css/estilo_01.css" rel="stylesheet" type="text/css">	
+	<link href="../css/estilo_01.css" rel="stylesheet" type="text/css">
+	<link href="../css/jquery-ui.css" rel="stylesheet" type="text/css">		
 	
 	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/datepicker-es.js"></script>
 	<script src="../js/general.js"></script>
 	
 	<script>
@@ -27,6 +30,12 @@
 			$('#ov_images_inicio').css("background-image","url(../resources/images/casas/encinilla/0.jpg)");
 			$('#ov_footer_inicio').css("background-image","url(../resources/images/casas/encinilla/0.jpg)");
 			load_texts('encinilla','es');
+			
+				var values="month=6&house=CasaEncinilla";
+				var resultado=ov_ajax_operation(values, "get_days");
+				if(resultado)
+					ov_paint_calendar(resultado, "hcalendar", "es");
+
 		});
 	</script>
 	
@@ -70,13 +79,13 @@
 		<div class="ov_section_03">
 			<div class="ov_article_01" id="virtual">	
 				<h2 id="htitulo_02"> </h2>
-				<div class="ov_separador_01"> </div>
-					
+				
+				<div class="ov_separador_01"> </div>					
 				<iframe src="http://www.navaluenga.net/visitasvirtuales/La Encinilla/virtualtour.html" height="400" width="100%" frameborder="no" allowfullscreen> </iframe>
 
-				<div class="ov_separador_01"> </div>
-					
+				<div class="ov_separador_01"> </div>					
 				<iframe src="http://player.vimeo.com/video/69410004?title=0&byline=0&portrait=0&color=dedede" width="100%" height="400" frameborder="0" allowfullscreen> </iframe>
+				
 			</div>
 		</div>
 		
@@ -133,6 +142,8 @@
 				<div class="ov_separador_01"> </div>
 					
 				<div id="htexto_03"> </div>
+				
+				<div id="hcalendar"> </div>
 
 			</div>
 		</div>		

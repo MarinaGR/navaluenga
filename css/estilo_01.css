@@ -631,3 +631,9 @@ a:hover
 	display: inline-block;
 	display:none;
 }
+
+table.ui-datepicker-calendar tbody td.highlight > a {
+    background: #D33333;
+    color: #FFFFFF;
+    border: 1px solid #FFDE2E;
+}

@@ -394,6 +394,7 @@ function ov_make_booking(formid)
 			$("#ov_loader_gif").hide();
 		   	return true;
 		}
+		
 	});
 }
 
@@ -427,7 +428,91 @@ function ov_send_contact(formid)
 	{
 		alert("Envío correcto a "+result);
 	   	return true;
-	}
+	}	
+}
+
+function ov_paint_calendar(items, contenedor, lang)
+{	
+	/*var it;
+	for(it in items)
+	{
+		console.log(items[it]["c5"]);
+	}*/
+	
+	$.datepicker.setDefaults($.datepicker.regional[lang]);
+	
+	$("#"+contenedor).datepicker({
+	    beforeShowDay: function(date) {
+	        var result = [true, '', null];
+	        var matching = $.grep(items, function(event) {
+	            return new Date(event.c5).setHours(0).valueOf() === date.valueOf();
+	        });
+	        
+	        if (matching.length) {
+	            result = [true, 'highlight', null];
+	        }
+	        return result;
+	    },
+	    onSelect: function(dateText) {
+	        var date,
+	            selectedDate = new Date(dateText),
+	            i = 0,
+	            event = null;
+	        
+	        while (i < items.length && !event) {
+	            date = new Date(items[i].c5).setHours(0);
+	            
+	            if (selectedDate.valueOf() === date.valueOf()) {
+	                event = items[i];
+	            }
+	            i++;
+	        }
+	        
+	        if (event) 
+	        {
+	            alert("Reserva para "+(event.c8+event.c9)+" personas.");
+	        }
+	    }
+	});
+	
+	/*var events = [ 
+	    { Title: "Five K for charity", Date: new Date("06/13/2014") }, 
+	    { Title: "Dinner", Date: new Date("06/25/2014") }, 
+	    { Title: "Meeting with manager", Date: new Date("06/01/2014") }
+	];
+	
+	$("#"+contenedor).datepicker({
+		firstDay: 1,
+	    beforeShowDay: function(date) {
+	        var result = [true, '', null];
+	        var matching = $.grep(events, function(event) {
+	            return event.Date.valueOf() === date.valueOf();
+	        });
+	        
+	        if (matching.length) {
+	            result = [true, 'highlight', null];
+	        }
+	        return result;
+	    },
+	    onSelect: function(dateText) {
+	        var date,
+	            selectedDate = new Date(dateText),
+	            i = 0,
+	            event = null;
+	        
+	        while (i < events.length && !event) {
+	            date = events[i].Date;
+	
+	            if (selectedDate.valueOf() === date.valueOf()) {
+	                event = events[i];
+	            }
+	            i++;
+	        }
+	        if (event) {
+	            alert(event.Title);
+	        }
+	    }
+	});*/
 	
 }
 
