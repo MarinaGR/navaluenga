@@ -1,0 +1,7 @@
+<a href="./index.html">Inicio</a>
+<a href="#historia" onclick="ov_go_to_section('historia')">Historia</a>
+<a href="#ubicacion" onclick="ov_go_to_section('ubicacion')">Ubicación</a>
+<a href="#lugares" onclick="ov_go_to_section('lugares')">Lugares de interés</a>
+<a href="#bosques" onclick="ov_go_to_section('bosques')">Bosques mágicos</a>
+<a href="#fiestas" onclick="ov_go_to_section('fiestas')">Fiestas y tradiciones</a>
+<a href="./contacto.html">Contacto</a>

@@ -1,3 +1,3 @@
-Conoce Navaluenga<br>
-Ocio y actividades de la zona<br>
+<!--<a href="conocenavaluenga.html">Conoce Navaluenga</a><br>
+<a href="ocioyactividades.html">Ocio y actividades</a><br>-->
 <a href="avisolegal.html">Aviso Legal</a><br>
