@@ -33,6 +33,7 @@ $(window).scroll(function() {
 $(document).ready(function() {
 	
 	$(".ov_section_01").css("height",viewport_height/3*2+"px");
+	$(".ov_circle_01").fadeIn(1000);
 	ov_change_header();
 	
 	//El navegador soporta @media
@@ -318,15 +319,12 @@ function ov_change_header()
 	{
 		$(".ov_header_01").addClass("ov_header_02").removeClass("ov_header_01");
 		$(".ov_logo_01").css("border","none");
-		$(".ov_menu_01").addClass("ov_menu_02").removeClass("ov_menu_01");
 	}
 	else
 	{
 		$(".ov_header_02").addClass("ov_header_01").removeClass("ov_header_02");
-		$(".ov_menu_02").addClass("ov_menu_01").removeClass("ov_menu_02");
 		$(".ov_logo_01").css("border-top","1px solid #ccc");
 		$(".ov_logo_01").css("border-bottom","1px solid #ccc");
-		//$("#mi_menu").hide();
 	}
 }
 
@@ -334,7 +332,7 @@ function ov_go_to_section(tag)
 {
 	 $(this).click(function(){
          $('html, body').stop().animate({
-             'scrollTop': $('#'+tag).offset().top
+             'scrollTop': $('#'+tag).offset().top-50
          }, 1000);
     });
 }
@@ -431,16 +429,14 @@ function ov_send_contact(formid)
 	}	
 }
 
-function ov_paint_calendar(items, contenedor, lang)
+function ov_paint_calendar(items, contenedor)
 {	
 	/*var it;
 	for(it in items)
 	{
 		console.log(items[it]["c5"]);
 	}*/
-	
-	$.datepicker.setDefaults($.datepicker.regional[lang]);
-	
+
 	$("#"+contenedor).datepicker({
 	    beforeShowDay: function(date) {
 	        var result = [true, '', null];
@@ -461,6 +457,8 @@ function ov_paint_calendar(items, contenedor, lang)
 	        
 	        while (i < items.length && !event) {
 	            date = new Date(items[i].c5).setHours(0);
+	            
+	            console.log(selectedDate);
 	            
 	            if (selectedDate.valueOf() === date.valueOf()) {
 	                event = items[i];
